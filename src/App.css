@@ -7,20 +7,56 @@
   pointer-events: none;
 }
 
+
+.mapContainer {
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  width: 50%;
+  }
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+.toggleStyle11 {
+  position: absolute;
+  background: #fff;
+  background-color: #a81c1c;
+  z-index: 1 !important;
+  color: #fff;
+  padding: 10px;
+  top: 30;
+  left: 20;
+  margin: 12px;
+  font-family: 'Open Sans', sans-serif;
+  }
+
+  .zoomButton1 {
+    position: absolute;
+    background: #fff;
+    background-color: #404040;
+    z-index: 1 !important;
+    color: #fff;
+    top: 300;
+    left: 200;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+
 .App-header {
-  background-color: #282c34;
+  background-color: #103e53;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: top;
+  font-size: calc(15px + 2vmin);
   color: white;
 }
 
@@ -35,4 +71,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.home,
+.reports,
+.products {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
